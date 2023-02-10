@@ -8,8 +8,8 @@ INSERT INTO board_tb(title, content, thumbnail, user_id, created_at) values('4�
 INSERT INTO board_tb(title, content, thumbnail, user_id, created_at) values('5번째 제목', '5번째 내용', '/images/dora.png', 2, now());
 INSERT INTO board_tb(title, content, thumbnail, user_id, created_at) values('6번째 제목', '6번째 내용', '/images/dora.png', 2, now());
 
-INSERT INTO reply_tb(comment, user_id, board_id, created_at) values('안녕하세요','1','1',now());
-INSERT INTO reply_tb(comment, user_id, board_id, created_at) values('반가워요','2','1',now());
-INSERT INTO reply_tb(comment, user_id, board_id, created_at) values('잘있어요','1','2',now());
-INSERT INTO reply_tb(comment, user_id, board_id, created_at) values('다시만나요','2','2',now());
+INSERT INTO reply_tb(comment, board_id, user_id, created_at) values('안녕하세요',1,1,now());
+INSERT INTO reply_tb(comment, board_id, user_id, created_at) values('반가워요',1,2,now());
+INSERT INTO reply_tb(comment, board_id, user_id, created_at) values('잘있어요',2,1,now());
+INSERT INTO reply_tb(comment, board_id, user_id, created_at) values('다시만나요',2,2,now());
 commit;
