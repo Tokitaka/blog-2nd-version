@@ -38,6 +38,6 @@ public class ReplyController {
 
         replyService.댓글쓰기(replySaveReqDto, principal.getId());
         // 리다이렉트 요청
-        return "redirect:/board" + replySaveReqDto.getBoardId();
+        return "redirect:/board/" + replySaveReqDto.getBoardId();
     }
 }
