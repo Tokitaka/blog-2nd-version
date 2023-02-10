@@ -6,11 +6,11 @@ import lombok.Setter;
 public class ReplyResp {
     @Setter
     @Getter
-    public static class ReplyDetailReqDto {
+    public static class ReplyDetailRespDto {
         private Integer id;
+        private Integer boardId;
+        private Integer userId;
         private String comment;
-        private Integer user_id;
-        private Integer board_id;
         private String username;
 
     }

@@ -1,12 +1,15 @@
 package shop.mtcoding.blog.model;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
+import shop.mtcoding.blog.dto.reply.ReplyResp.ReplyDetailRespDto;
 
 @Mapper
 public interface ReplyRepository {
+        public List<ReplyDetailRespDto> findByIdWithUsername(int boardId);
 
         public List<Reply> findAll();
 
